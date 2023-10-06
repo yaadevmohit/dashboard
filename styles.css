@@ -9,6 +9,7 @@ body {
     "nav search"
     "nav dashboard";
     background-color: #CDFAD5;
+    font-family: 'Martian Mono';
 }
 
 .nav-bar {
@@ -60,18 +61,15 @@ body {
         "projects trending";
 }
 
-
 .dashboard-subheading {
-    grid-column: 1 / span 2;
-    margin-block: 0;
-    font-size: 16px;
-    padding: 0;
-    font-family: 'Martian Mono';
+    margin-left: 1rem;
 }
 
-.projects {
-    margin: 1rem;
+.projects-container {
     grid-area: projects;
+}
+.projects {
+    margin-inline: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
@@ -92,9 +90,17 @@ body {
 
 .announcements {
     grid-area: announcements;
+    margin-inline: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
 }
 .trending {
     grid-area: trending;
+    padding: 4rem;
+    margin-right: 1rem;
+    margin-block: 1rem;
+    border-radius: 8px;
 }
 
 .announcement-container, .trending {
@@ -102,17 +108,14 @@ body {
     font-family: 'Martian Mono';
 }
 
+.announcement-container {
+    border-bottom: solid black;
+    border-width: thin;
+}
+
 .announcements > .dashboard-subheading {
     margin-top: 1.5rem;
 }
 .announcement-container {
     margin: 0;
-}
-
-
-.trending {
-    padding: 4rem;
-    margin-right: 1rem;
-    margin-block: 1rem;
-    border-radius: 8px;
 }
