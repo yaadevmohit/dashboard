@@ -93,7 +93,7 @@ body {
     margin-inline: 1rem;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+
 }
 .trending {
     grid-area: trending;
@@ -103,19 +103,21 @@ body {
     border-radius: 8px;
 }
 
-.announcement-container, .trending {
+.announcements-content, .trending {
     background-color: #E55604;
-    font-family: 'Martian Mono';
+}
+
+.announcements-content {
+    padding: 1rem;
 }
 
 .announcement-container {
     border-bottom: solid black;
     border-width: thin;
+    margin: 0;
 }
 
 .announcements > .dashboard-subheading {
     margin-top: 1.5rem;
-}
-.announcement-container {
-    margin: 0;
+    background-color: #CDFAD5;
 }
