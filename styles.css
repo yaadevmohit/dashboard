@@ -95,21 +95,22 @@ body {
     flex-direction: column;
 
 }
-.trending {
+.trending-main {
     grid-area: trending;
     padding: 4rem;
     margin-right: 1rem;
     margin-block: 1rem;
     border-radius: 8px;
-}
-
-.announcements-content, .trending {
     background-color: #E55604;
 }
 
+
 .announcements-content {
-    padding: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #E55604;
 }
+
 
 .announcement-container {
     border-bottom: solid black;
